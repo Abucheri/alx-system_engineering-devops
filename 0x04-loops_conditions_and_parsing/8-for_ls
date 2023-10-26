@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script uses for loop to list the content of the current directory in a specific format.
+#	Use a for loop to iterate over files and directories in the current directory
+# 	Check if the item is a file or directory and if it's not hidden
+#	Extract the part of the name after the first dash
+
+for item in *
+do
+	if [ -e "$item" ] && [ ! -d "$item" ] && [ "$item" != ".*" ];
+	then
+		name_after_dash="${item#*-}"
+		echo "$name_after_dash"
+	fi
+done
