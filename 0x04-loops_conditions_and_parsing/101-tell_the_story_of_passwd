@@ -2,10 +2,10 @@
 # This script uses while loop to tell a story about users in /etc/passwd.
 #	Use a while loop to read the /etc/passwd file line by line
 
-while IFS=':' read username password uid gid info home shell;
+while IFS=":" read -r username _ userid group_id user_info homedir shell password
 do
-	echo "The user $username is part of the $gid gang,"\
-	"lives in $home and rides $shell."\
-	"$uid's place is protected by the passcode $password,"\
-	"more info about the user here: $info"
+	echo "The user $username is part of the $group_id gang,"\
+	"lives in $homedir and rides $shell."\
+	"$userid's place is protected by the passcode $password,"\
+	"more info about the user here: $user_info"
 done < /etc/passwd
