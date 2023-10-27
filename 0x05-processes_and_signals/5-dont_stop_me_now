@@ -2,4 +2,5 @@
 # This script stops the "4-to_infinity_and_beyond" process
 #	Find and kill the "4-to_infinity_and_beyond" process
 
-pkill -f "4-to_infinity_and_beyond"
+MPID=$(pgrep -f "4-to-infinity-and-beyond")
+kill "$MPID"
