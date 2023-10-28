@@ -10,13 +10,13 @@ start_manage_my_process() {
 }
 
 stop_manage_my_process() {
-	kill $(cat "$PID_FILE")
+	kill "$(cat "$PID_FILE")"
 	rm "$PID_FILE"
 	echo "manage_my_process stopped"
 }
 
 restart_manage_my_process() {
-	kill $(cat "$PID_FILE")
+	kill "$(cat "$PID_FILE")"
 	rm "$PID_FILE"
 	./manage_my_process &
 	echo $! > "$PID_FILE"
