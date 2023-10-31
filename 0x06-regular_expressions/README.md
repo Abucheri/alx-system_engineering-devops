@@ -42,7 +42,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 		- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 2. Repetition Token #1
-	
+	<img width="967" alt="regex_task3" src="https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/3e441454-9500-40f3-8238-a92fbc738bb9">
 	- Requirements:
 		- Find the regular expression that will match the above cases
 		- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
