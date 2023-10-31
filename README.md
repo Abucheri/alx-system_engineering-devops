@@ -6,3 +6,4 @@
 3. [0x03. Shell Variables & Expansions](./0x03-shell_variables_expansions/ 'shell_variables_expansions')
 4. [0x04. Loops, conditions and parsing](./0x04-loops_conditions_and_parsing/ 'loops_conditions_parsing')
 5. [0x05. Processes and signals](./0x05-processes_and_signals/ 'processes_signals')
+6. [0x06. Regular expression](./0x06-regular_expressions 'regular expressions')
