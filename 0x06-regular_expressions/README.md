@@ -96,7 +96,8 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 	```
 
 7. OMG WHY ARE YOU SHOUTING?
-	<img height="200" width="200" alt="regex_shouting" src="https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/3bd69c48-cb2a-48c2-b7aa-da0ee26b7b3c">
+
+   	<img height="200" width="200" alt="regex_shouting" src="https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/3bd69c48-cb2a-48c2-b7aa-da0ee26b7b3c">
 	- Requirement:
 		- The regular expression must be only matching: capital letters
 	- Example:
