@@ -19,7 +19,8 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 ```
 
 0. Simply matching School
-	- Requirements:
+	<img width="969" alt="regex_task1" src="https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/13b8dd33-238c-4bc6-86e9-142b01ea0d17">
+ 	- Requirements:
 		- The regular expression must match `School`
 		- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 	- Example:
