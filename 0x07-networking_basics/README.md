@@ -29,6 +29,9 @@ conceptual framework so we can better understand complex interactions that are h
 		3.  Randomly
 
 1. Types of network
+
+	![net_types](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/02fa38e9-7463-4be7-91dd-d5586abeae39)
+
 	- LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 	- Questions:
 	- What type of network a computer in local is connected to?
