@@ -120,6 +120,9 @@ conceptual framework so we can better understand complex interactions that are h
 	```
 
 5. Is the host on the network
+
+   	![ping](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/1f9deea0-8748-4c55-b7f2-f3c956e2fbeb)
+
 	- The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network. The command `ping` uses ICMP to make sure that a network device remains online or to troubleshoot issues on the network.
 	- Write a Bash script that pings an IP address passed as an argument.
 	- Requirements:
