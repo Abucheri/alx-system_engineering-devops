@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script uses netstat to display listening ports with associated PID and program names.
+
+netstat -l --program
