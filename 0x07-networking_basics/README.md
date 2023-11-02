@@ -35,19 +35,22 @@ conceptual framework so we can better understand complex interactions that are h
 	- LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 	- Questions:
 	- What type of network a computer in local is connected to?
-		1.		Internet
-		2.		WAN
-		3. 		LAN
+		1. Internet
+		2. WAN
+		3. LAN
 	- What type of network could connect an office in one building to another office in a building a few streets away?
-		1.		Internet
-		2.		WAN
-		3.		LAN
+		1. Internet
+		2. WAN
+		3. LAN
 	- What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?
-		1.		Internet
-		2.		WAN
-		3.		LAN
+		1. Internet
+		2. WAN
+		3. LAN
 
 2. MAC and IP address
+
+   	![mac_ip](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/a64ff392-f7e4-45f9-8e14-45899ce758d7)
+
 	- Questions:
 	- What is a MAC address?
 		1) The name of a network interface
