@@ -7,4 +7,5 @@
 4. [0x04. Loops, conditions and parsing](./0x04-loops_conditions_and_parsing/ 'loops_conditions_parsing')
 5. [0x05. Processes and signals](./0x05-processes_and_signals/ 'processes_signals')
 6. [0x06. Regular expression](./0x06-regular_expressions 'regular expressions')
-7. [0x07. Networking basics #0](./0x07-networking_basics 'networking basica')
+7. [0x07. Networking basics #0](./0x07-networking_basics 'networking basics')
+8. [0x08. Networking basics #1](./0x08-networking_basics_2 'networking basics 2')
