@@ -20,13 +20,13 @@ conceptual framework so we can better understand complex interactions that are h
   
 	- Questions:
 	- What is the OSI model?
-		1.  Set of specifications that network hardware manufacturers must respect
-		2.  The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology
-		3.  The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology
+		1)  Set of specifications that network hardware manufacturers must respect
+		2)  The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology
+		3)  The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology
 	- How is the OSI model organized?
-		1.  Alphabetically
-		2.  From the lowest to the highest level
-		3.  Randomly
+		1)  Alphabetically
+		2)  From the lowest to the highest level
+		3)  Randomly
 
 1. Types of network
 
@@ -46,3 +46,14 @@ conceptual framework so we can better understand complex interactions that are h
 		1.		Internet
 		2.		WAN
 		3.		LAN
+
+2. MAC and IP address
+	- Questions:
+	- What is a MAC address?
+		1) The name of a network interface
+		2) The unique identifier of a network interface
+		3) A network interface
+	- What is an IP address?
+		1) Is to devices connected to a network what postal address is to houses
+		2) The unique identifier of a network interface
+		3) Is a number that network devices use to connect to networks
