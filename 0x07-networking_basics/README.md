@@ -62,6 +62,9 @@ conceptual framework so we can better understand complex interactions that are h
 		3) Is a number that network devices use to connect to networks
 
 3. UDP and TCP
+
+ 	![udp_tcp](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/c2e5d784-0070-4058-87ac-6913e9269e98)
+
 	- Let’s fill the empty parts in the drawing above.
 	- Questions:
 		- Which statement is correct for the TCP box:
