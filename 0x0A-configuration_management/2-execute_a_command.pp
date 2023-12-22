@@ -2,7 +2,7 @@
 # Description: Terminate a process named "killmenow" using pkill
 
 exec { 'killmenow':
-  command => '/usr/bin/kill -TERM $(pgrep killmenow)',
+  command => '/usr/bin/pkill killmenow',
   path    => ['/bin', '/usr/bin'],
   onlyif  => '/usr/bin/pgrep killmenow',
 }
