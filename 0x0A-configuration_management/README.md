@@ -2,9 +2,8 @@
 
 ## Background Context
 
-<p>
+
 When I was working for SlideShare, I worked on an auto-remediation tool called [Skynet](https://engineering.linkedin.com/slideshare/skynet-project-_-monitor-scale-and-auto-heal-system-cloud) that monitored, scaled and fixed Cloud infrastructure. I was using a parallel job-execution system called MCollective that allowed me to execute commands to one or multiple servers at the same time. I could apply an action to a selected set of servers by applying a filter such as the server’s hostname or any other metadata we had (server type, server environment…). At some point, a bug was present in my code that sent `nil` to the filter method.
-</p>
 
 There were 2 pieces of bad news:
 
@@ -16,8 +15,9 @@ There were 2 pieces of bad news:
 <p>Thanks to Puppet, we were able to restore our infrastructure to normal operation in under 1H, pretty impressive. Imagine if we had to do everything manually: launching the servers, configuring and linking them, importing application code, starting every process, and obviously, fixing all the bugs (you should know by now that complicated infrastructure always goes sideways)…</p>
 
 <p>Obviously writing Puppet code for your infrastructure requires an investment of time and energy, but in the long term, it is for sure a must-have.</p>
+![4i8il3B](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/0cd9f646-1c87-444a-aaaf-9c7b4b73468b)
 
-That was me `^_^‘: https://twitter.com/devopsreact/status/836971570136375296`
+That was me [^_^‘:] (https://twitter.com/devopsreact/status/836971570136375296)
 
 ## Note on Versioning
 Your Ubuntu 20.04 VM should have Puppet 5.5 preinstalled.
