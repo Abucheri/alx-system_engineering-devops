@@ -1,6 +1,7 @@
 # 0x0B. SSH
-
 # Background Context
+![zPVRKhPsUP5lK](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/449e108d-003a-4348-acbc-3b87a75ef04a)
+
 Along with this project, you have been attributed an Ubuntu server, living in a datacenter far far away. Like level 2 of the application process, you will connect using `ssh`. But contrary to level 2, you will not connect using a password but an RSA key. We’ve configured your server with the public key you created in the first task of ___a previous project___ shared in your ___intranet profile___.
 
 You can access your server information in the ___my servers___ section of the intranet, each line with contains the IP and username you should use to connect via `ssh`.
