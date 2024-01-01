@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Custom client configuration file
+# ~/.ssh/config
+
+Host 54.210.107.201
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
