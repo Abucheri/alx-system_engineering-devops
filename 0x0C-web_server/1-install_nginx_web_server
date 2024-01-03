@@ -8,8 +8,15 @@
 apt-get update -y
 apt-get install -y nginx
 
-sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
 
-kill -s HUP "$(pgrep -f 'nginx: master process')"
+printf %s "server {
+	listen      80 default_server;
+	listen      [::]:80 default_server;
+	root        /etc/nginx/html;
+	index       index.html index.htm;
+}" > /etc/nginx/sites-available/default
 
-echo "Hello World!" > /var/www/html/index.html
+service nginx restart
