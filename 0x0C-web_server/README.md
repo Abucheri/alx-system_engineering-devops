@@ -3,6 +3,7 @@
 ![8Gu52Qv](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/446f20b9-d453-4f71-b401-5de60ee16189)
 
 # Background Context
+## Video from Youtube
 
 
 https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/251bab84-f542-4742-b310-e7728f96c3a1
@@ -70,6 +71,7 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 	- That is one way of publishing your website pages to your server.
 
 1. Install nginx web server
+
    	![01cab59e881e31842b8d47a0974e8d3b6f0f2001](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/081ef892-5519-4ac9-8ef2-9ddf44549fa3)
 
 	- Readme:
