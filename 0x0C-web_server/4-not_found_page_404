@@ -12,16 +12,15 @@ touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
 touch /etc/nginx/html/404.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
-echo '<html><head><meta http-equiv="refresh" content="0;url=https://www.youtube.com/watch?v=QH2-TGUlwu4"></head></html>' > /usr/share/nginx/html/redirect_me.html
 
 printf %s "server {
-	listen 80 default_server;
+	listen 80;
 	listen [::]:80 default_server;
-	root /usr/share/nginx/html;
-	index index.html index.htm;
+	root   /etc/nginx/html;
+	index  index.html index.htm;
 
 	location /redirect_me {
-		rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
+		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
 	}
 
 	error_page 404 /404.html;
@@ -31,4 +30,4 @@ printf %s "server {
 	}
 }" > /etc/nginx/sites-available/default
 
-service nginx restart	
+service nginx restart
