@@ -1,6 +1,13 @@
 # 0x0C. Web server
 
+![8Gu52Qv](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/446f20b9-d453-4f71-b401-5de60ee16189)
+
 # Background Context
+
+
+https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/251bab84-f542-4742-b310-e7728f96c3a1
+
+
 In this project, some of the tasks will be graded on 2 aspects:
 
 1. Is your `web-01` server configured according to requirements 
@@ -20,7 +27,8 @@ sylvain@ubuntu
 
 As you can tell, I am not using `emacs` to perform the task in my answer file. This exercise is aiming at training you on automating your work. If you can automate tasks that you do manually, you can then automate yourself out of repetitive tasks and focus your energy on something more interesting. For an [SRE](https://www.atlassian.com/incident-management/devops/sre), that comes very handy when there are hundreds or thousands of servers to manage, the work cannot be only done manually. Note that the checker will execute your script as the `root` user, you do not need to use the `sudo` command.
 
-A good Software Engineer is a [lazy Software Engineer](https://www.techwell.com/techwell-insights/2013/12/why-best-programmers-are-lazy-and-act-dumb).
+A good Software Engineer is a [lazy Software Engineer](https://www.techwell.com/techwell-insights/2013/12/why-best-programmers-are-lazy-and-act-dumb). ![82VsYEC](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/472aba85-7407-4446-98df-b33a8b63f873)
+
 
 Tips: to test your answer Bash script, feel free to reproduce the checker environment:
 - start a `Ubuntu 16.04` sandbox
@@ -62,6 +70,8 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 	- That is one way of publishing your website pages to your server.
 
 1. Install nginx web server
+   	![01cab59e881e31842b8d47a0974e8d3b6f0f2001](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/081ef892-5519-4ac9-8ef2-9ddf44549fa3)
+
 	- Readme:
 		- [-y on apt-get command](https://askubuntu.com/questions/672892/what-does-y-mean-in-apt-get-y-install-command)
 	- Web servers are the piece of software generating and serving HTML pages, let’s install one!
@@ -105,7 +115,7 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 	root@ubuntu#
 	```
 
-2. Setup a domain name
+3. Setup a domain name
 	- [.TECH Domains](https://get.tech/) is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
 	- .TECH Domains worked with domain name registrars to give you access to a free domain name for a year. Please get the promo code in your `tools space`. Feel free to drop a thank you tweet for [.TECH Domains](https://twitter.com/dottechdomains).
 	- Provide the domain name in your answer file.
@@ -143,7 +153,7 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 	```
 	- When your domain name is setup, please verify the Registrar here: [Whois](https://whois.whoisxmlapi.com/) and you must see in the JSON response: `"registrarName": "Dotserve Inc"`
 
-3. Redirection
+4. Redirection
 	- Readme:
 		- [Replace a line with multiple lines with sed](https://stackoverflow.com/questions/26041088/sed-replace-line-with-multiline-variable)
 	- Configure your Nginx server so that `/redirect_me` is redirecting to another page.
@@ -165,7 +175,7 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 	sylvain@ubuntu$
 	```
 
-4. Not found page 404
+5. Not found page 404
 	- Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`.
 	- Requirements:
 		- The page must return an HTTP 404 error code
@@ -188,7 +198,7 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 	sylvain@ubuntu$
 	```
 
-5. Install Nginx web server (w/ Puppet)
+6. Install Nginx web server (w/ Puppet)
 	- Time to practice configuring your server with Puppet! Just as you did before, we’d like you to install and configure an Nginx server using Puppet instead of Bash. To save time and effort, you should also include resources in your manifest to perform a 301 redirect when querying /redirect_me.
 	- Requirements:
 		- Nginx should be listening on port 80
