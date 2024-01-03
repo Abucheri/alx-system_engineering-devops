@@ -6,7 +6,7 @@
 # Reload Nginx configuration without using systemctl
 
 apt-get update
-apt-get install -y nginx
+apt-get install  nginx
 
 echo "Hello World!" > /etc/nginx/html/index.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
