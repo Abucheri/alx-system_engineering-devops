@@ -12,3 +12,4 @@
 9. [0x09. Web infrastructure design](./0x09-web_infrastructure_design/ 'web infrastructure')
 10. [0x0A. Configuration management](./0x0A-configuration_management/ 'CM')
 11. [0x0B. SSH](./0x0B-ssh/ 'ssh')
+12. [0x0C. Web server](./0x0C-web_server/ 'web_server')
