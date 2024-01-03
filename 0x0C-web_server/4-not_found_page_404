@@ -11,7 +11,7 @@ apt-get install -y nginx
 touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
 touch /etc/nginx/html/404.html
-echo '<html><body>Ceci n&apos;est pas une page</body></html>' > /usr/share/nginx/html/404.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 echo '<html><head><meta http-equiv="refresh" content="0;url=https://www.youtube.com/watch?v=QH2-TGUlwu4"></head></html>' > /usr/share/nginx/html/redirect_me.html
 
 printf %s "server {
@@ -25,7 +25,8 @@ printf %s "server {
 	}
 
 	error_page 404 /404.html;
-	location = /404.html {
+	location /404 {
+		root /etc/nginx/html;
 		internal;
 	}
 }" > /etc/nginx/sites-available/default
