@@ -5,7 +5,7 @@
 # Configure Nginx to use the custom 404 page
 # Reload Nginx configuration without using systemctl
 
-apt-get -y update
+apt-get update
 apt-get install -y nginx
 
 echo "Hello World!" > /etc/nginx/html/index.html
