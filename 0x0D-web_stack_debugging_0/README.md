@@ -1,5 +1,8 @@
 # 0x0D. Web stack debugging #0
 
+![uWLzjc8](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/d56ebbba-bd02-4048-b11d-606ec28fed3a)
+
+
 # Background Context
 
 The Webstack debugging series will train you in the art of debugging. Computers and software rarely work the way we want (that’s the “fun” part of the job!).
