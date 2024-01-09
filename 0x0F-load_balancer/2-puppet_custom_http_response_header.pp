@@ -1,5 +1,6 @@
 # 2-puppet_custom_http_response_header.pp
 # Puppet manifest to configure Nginx with a custom HTTP response header
+include stdlib
 
 exec {'update':
   provider => shell,
