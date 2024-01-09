@@ -1,22 +1,23 @@
 #!/usr/bin/env bash
 # This script installs and configures HAProxy on a new Ubuntu machine
 
-apt-get install -y software-properties-common
-sudo apt-get update
-sudo apt-get install -y haproxy
+sudo -i
+sudo apt-get -y update
+sudo apt-get -y install haproxy
+sudo sed -i "9i ENABLED=1" /etc/default/haproxy
+cat >> /etc/haproxy/haproxy.cfg <<EOF
 
-echo 'frontend web
+frontend haproxynode
     bind *:80
     mode http
-    default_backend web_servers
+    default_backend backend_nodes
 
-backend web_servers
-    mode http
+backend backend_nodes
+    stats enable
+    stats uri /haproxy?stats
     balance roundrobin
     server 308631-web-01 54.210.107.201:80 check
     server 308631-web-02 54.237.76.82:80 check
-' | sudo tee /etc/haproxy/haproxy.cfg > /dev/null
 
-sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
-
-service haproxy restart
+EOF
+sudo service haproxy restart
