@@ -14,4 +14,5 @@
 11. [0x0B. SSH](./0x0B-ssh/ 'ssh')
 12. [0x0C. Web server](./0x0C-web_server/ 'web_server')
 13. [0x0D. Web stack debugging #0](./0x0D-web_stack_debugging_0/ 'web stack debugging')
-14. [0x0F. Load balancer](./0x0F-load_balancer/ 'load balancer')
+14. [0x0E. Web stack debugging #1](./0x0E-web_stack_debugging_1/ 'web debbugging 1')
+15. [0x0F. Load balancer](./0x0F-load_balancer/ 'load balancer')
