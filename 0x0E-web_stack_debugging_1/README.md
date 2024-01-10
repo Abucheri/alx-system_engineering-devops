@@ -1,5 +1,8 @@
 # 0x0E. Web stack debugging #1
 
+![B4eeypV](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/10c26993-f27d-4552-9556-3f9e0065f13f)
+
+
 0. Nginx likes port 80
 	- Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80. Feel free to install whatever tool you need, start and destroy as many containers as you need to debug the issue. Then, write a Bash script with the minimum number of commands to automate your fix.
 	- Requirements:
