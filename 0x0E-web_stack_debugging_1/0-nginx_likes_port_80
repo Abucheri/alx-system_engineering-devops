@@ -4,6 +4,7 @@
 apt-get update
 apt-get install -y nginx
 
-echo "listen 80;" > /etc/nginx/sites-available/default
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
 service nginx restart
