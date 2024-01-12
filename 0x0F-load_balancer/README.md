@@ -1,5 +1,8 @@
 # 0x0F. Load balancer
 
+![qfdked8](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/cee5c746-9dad-4014-92be-fac13b771a1c)
+
+
 # Background Context
 You have been given 2 additional servers:
 	- gc-[STUDENT_ID]-web-02-XXXXXXXXXX
