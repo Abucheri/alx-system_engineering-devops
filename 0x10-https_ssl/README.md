@@ -1,7 +1,13 @@
 # 0x10. HTTPS SSL
 
+![FlhGPEK](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/17e4a993-9b58-4329-9ea7-2c3095e239c8)
+
+
 # Background Context
 ## What happens when you don’t secure your website traffic?
+
+![xCmOCgw](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/03463ee6-e4dd-43c8-b80d-03b3272f0c60)
+
 
 0. World wide web
 	- Configure your domain zone so that the subdomain `www` points to your load-balancer IP (`lb-01`). Let’s also add other subdomains to make our life easier, and write a Bash script that will display information about subdomains.
