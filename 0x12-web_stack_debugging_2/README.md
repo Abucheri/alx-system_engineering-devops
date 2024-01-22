@@ -1,6 +1,13 @@
 # 0x12. Web stack debugging #2
 
+![99littlebugsinthecode-holberton](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/627ef828-85a1-44d8-8d05-019c113e98ce)
+
+
 0. Run software as another user
+
+	![eaeff07a715ff880b1ceb8e863a1d141a74a7f85](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/8a6f5d1e-439d-4a23-8e2a-7a0442ec3657)
+
+ 	
 	- The user `root` is, on Linux, the “superuser”. It can do anything it wants, that’s a good and bad thing. A good practice is that one should never be logged in the `root` user, as if you fat finger a command and for example run `rm -rf /`, there is no comeback. That’s why it is preferable to run as a privileged user, meaning that the user also has the ability to perform tasks that the `root` user can do, just need to use a specific command that you need to discover.
 	- For the containers that you are given in this project as well as the checker, everything is run under the `root` user, which has the ability to run anything as another user.
 	- Requirements:
@@ -18,7 +25,7 @@
 	root@ubuntu:~#
 	```
 
-1. Run Nginx as Nginx
+2. Run Nginx as Nginx
 	- The `root` user is a superuser that can do anything on a Unix machine, the top administrator. Security wise, you must do everything that you can to prevent an attacker from logging in as `root`. With this in mind, it’s a good practice not to run your web servers as `root` (which is the default for most configurations) and instead run the process as the less privileged `nginx` user instead. This way, if a hacker does find a security issue that allows them to break-in to your server, the impact is limited by the permissions of the `nginx` user.
 	- Fix this container so that Nginx is running as the `nginx` user.
 	- Requirements:
@@ -40,7 +47,7 @@
 	root@ab6f4542747e:~#
 	```
 
-2. 7 lines or less
+3. 7 lines or less
 	- Using what you did for task #1, make your fix short and sweet.
 	- Requirements:
 		- Your Bash script must be 7 lines long or less
