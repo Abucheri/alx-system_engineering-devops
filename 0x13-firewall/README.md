@@ -1,7 +1,13 @@
 # 0x13. Firewall
 
+![V1HjQ1Y](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/aa2cc8ba-7c95-474f-aaec-7417c0f46541)
+
+
 ## Background Context
 **Your servers without a firewall…**
+
+![holbertonschool-firewall](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/b02a6d18-4bae-4199-aa89-208710cac1b0)
+
 
 ## More Info
 As explained in the ___web stack debugging guide___ concept page, `telnet` is a very good tool to check if sockets are open with `telnet IP PORT`. For example, if you want to check if port 22 is open on `web-02`:
