@@ -1,4 +1,9 @@
+
+https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/b4a1d119-0a57-4895-b9dd-d475e5b47e54
 # 0x14. MySQL
+
+![KkrkDHT](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/c0616064-4c7b-4633-a77a-a3fdba2e1964)
+
 
 0. Install MySQL
 	- First things first, let’s get MySQL installed on ___both___ your web-01 and web-02 servers.
@@ -66,6 +71,10 @@
 	```
 
 4. Setup a Primary-Replica infrastructure using MySQL
+
+	![09e83e914f0d6865ce320a47f2f14837a5b190b6](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/cc33ef1c-aced-4d31-910f-3c99b1678fb7)
+
+   	
 	- Having a replica member on for your MySQL database has 2 advantages:
 		- Redundancy: If you lose one of the database servers, you will still have another working one and a copy of your data
 		- Load distribution: You can split the read operations between the 2 servers, reducing the load on the primary member and improving query response speed
