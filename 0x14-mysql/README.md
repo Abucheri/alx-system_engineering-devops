@@ -1,5 +1,3 @@
-
-https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/b4a1d119-0a57-4895-b9dd-d475e5b47e54
 # 0x14. MySQL
 
 ![KkrkDHT](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/c0616064-4c7b-4633-a77a-a3fdba2e1964)
@@ -177,6 +175,9 @@ https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/b4a1d1
 	```
 
 5. MySQL backup
+
+	https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/b4a1d119-0a57-4895-b9dd-d475e5b47e54
+
 	- What if the data center where both your primary and replica database servers are hosted are down because of a power outage or even worse: flooding, fire? Then all your data would inaccessible or lost. That’s why you want to backup and store them in a different system in another physical location. This can be achieved by dumping your MySQL data, compressing them and storing them in a different data center.
 	- Write a Bash script that generates a MySQL dump and creates a compressed archive out of it.
 	- Requirements:
