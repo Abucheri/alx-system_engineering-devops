@@ -39,7 +39,7 @@ def get_employee_todo_progress(employee_id):
 
     for task in todo_data:
         if task['completed']:
-            print("\t{}".format(task['title']))
+            print("\t {}".format(task['title']))
 
 
 if __name__ == "__main__":
