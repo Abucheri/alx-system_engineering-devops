@@ -24,30 +24,17 @@ def get_employee_todo_progress(employee_id):
     base_url = "https://jsonplaceholder.typicode.com"
 
     # Fetch user data
-    user_response = requests.get("{}/users/{}".format(base_url, employee_id))
-    user_data = user_response.json()
+    user = requests.get("{}/users/{}".format(base_url, employee_id)).json()
+    username = user.get("username")
+    todos = (requests.get("{}/todos".format(base_url),
+             params={"userId": employee_id}).json())
 
-    # Fetch TODO list for the user
-    todo_response = requests.get("{}/todos?userId={}"
-                                 .format(base_url, employee_id))
-    todo_data = todo_response.json()
-
-    # Prepare CSV data
-    csv_data = ([["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS",
-                "TASK_TITLE"]])
-    for task in todo_data:
-        csv_data.append([
-            str(user_data['id']),
-            user_data['username'],
-            str(task['completed']),
-            task['title']
-        ])
-
-    # Export to CSV file
-    csv_filename = "{}.csv".format(user_data['id'])
-    with open(csv_filename, 'w', newline='') as csv_file:
-        csv_writer = csv.writer(csv_file)
-        csv_writer.writerows(csv_data)
+    # Preparing CSV data
+    with open("{}.csv".format(employee_id), "w", newline="") as csvfile:
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+        [writer.writerow(
+            [employee_id, username, t.get("completed"), t.get("title")]
+         ) for t in todos]
 
     # print("Data exported to {}".format(csv_filename))
 
