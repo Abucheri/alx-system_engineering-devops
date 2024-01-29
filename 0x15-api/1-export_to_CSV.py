@@ -49,7 +49,7 @@ def get_employee_todo_progress(employee_id):
         csv_writer = csv.writer(csv_file)
         csv_writer.writerows(csv_data)
 
-    print("Data exported to {}".format(csv_filename))
+    # print("Data exported to {}".format(csv_filename))
 
 
 if __name__ == "__main__":
