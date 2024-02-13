@@ -1,5 +1,8 @@
 #  0x16. API advanced 
 
+![WIxXad8](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/712c6821-158f-44d4-bb53-666446d60e80)
+
+
 ## Background Context
 <p>
 Questions involving APIs are common for interviews. Sometimes they’re as simple as ‘write a Python script that queries a given endpoint’, sometimes they require you to use recursive functions and format/sort the results.
