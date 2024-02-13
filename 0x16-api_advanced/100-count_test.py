@@ -27,7 +27,6 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
         if response.status_code == 404:
             raise Exception
     except Exception:
-        print("")
         return
 
     data = data.get("data")
@@ -45,7 +44,6 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
 
     if after is None:
         if len(instances) == 0:
-            print("")
             return
         instances = sorted(instances.items(), key=lambda kv: (-kv[1], kv[0]))
         [print("{}: {}".format(k, v)) for k, v in instances]
