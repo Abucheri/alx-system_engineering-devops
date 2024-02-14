@@ -1,6 +1,10 @@
 # 0x17. Web stack debugging #3
 
 ## Background Context
+
+![d42WuBh](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/0edba24b-c419-4adf-a768-aed4743201e7)
+
+
 <p>
 When debugging, sometimes logs are not enough. Either because the software is breaking in a way that was not expected and the error is not being logged, or because logs are not providing enough information. In this case, you will need to go down the stack, the good news is that this is something Holberton students can do :)
 
