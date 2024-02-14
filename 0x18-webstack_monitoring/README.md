@@ -9,8 +9,8 @@
 
 Web stack monitoring can be broken down into 2 categories:
 
-    - Application monitoring: getting data about your running software and making sure it is behaving as expected
-    - Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload)
+- Application monitoring: getting data about your running software and making sure it is behaving as expected
+- Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload)
 
 ![ktCXnhE](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/92561299-ad24-4761-8963-eda7f6220f6b)
 
@@ -20,18 +20,18 @@ Web stack monitoring can be broken down into 2 categories:
 
 	<img width="1343" alt="6b0ea6345a6375437845" src="https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/39181843-927f-4b1c-b5fd-e272deaedab3">
 
-		<ul>
-			<li>Sign up for Datadog - ___Please make sure you are using the US website of Datagog (https://app.datadoghq.com)___</li>
-			<l1>Use the ___US1___ region</l1>
-			<li>Install `datadog-agent` on `web-01`</li>
-			<li>Create an `application key`</li>
-			<l1>Copy-paste in your Intranet user profile (`here`) your DataDog `API key` and your DataDog `application key`.</l1>
-			<li>Your server `web-01` should be visible in `Datadog` under the host name `XX-web-01`</li>
-				<ul>	
-					<li>You can validate it by using this [API](https://docs.datadoghq.com/api/latest/hosts/)</li>
-					<li>If needed, you will need to update the hostname of your server</li>
-				</ul>
-		</ul>
+	<ul>
+		<li>Sign up for Datadog - ___Please make sure you are using the US website of Datagog (https://app.datadoghq.com)___</li>
+		<l1>Use the ___US1___ region</l1>
+		<li>Install `datadog-agent` on `web-01`</li>
+		<li>Create an `application key`</li>
+		<l1>Copy-paste in your Intranet user profile (`here`) your DataDog `API key` and your DataDog `application key`.</l1>
+		<li>Your server `web-01` should be visible in `Datadog` under the host name `XX-web-01`</li>
+			<ul>	
+				<li>You can validate it by using this [API](https://docs.datadoghq.com/api/latest/hosts/)</li>
+				<li>If needed, you will need to update the hostname of your server</li>
+			</ul>
+	</ul>
 
 1. Monitor some metrics
 	- Among the litany of data your monitoring service can report to you are system metrics. You can use these metrics to determine statistics such as reads/writes per second, which can help your company determine if/how they should scale. Set up some `monitors` within the `Datadog` dashboard to monitor and alert you of a few. You can read about the various system metrics that you can monitor here: [System Check](https://docs.datadoghq.com/integrations/system/).
@@ -39,7 +39,7 @@ Web stack monitoring can be broken down into 2 categories:
 	<img width="1339" alt="6a4551974aadc181e97a" src="https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/12b44f52-b8a5-48fd-bba6-adee9d7132d1">
 
 	<ul>
-   		<l1> Set up a monitor that checks the number of read requests issued to the device per second.</l1>
+   		<l1>Set up a monitor that checks the number of read requests issued to the device per second.</l1>
 		<li>Set up a monitor that checks the number of write requests issued to the device per second.</li>
   	</ul>
 
