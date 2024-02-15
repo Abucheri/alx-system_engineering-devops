@@ -15,9 +15,17 @@ def top_ten(subreddit):
     headers = {'User-Agent': 'MyApp/1.0'}
 
     response = requests.get(url, headers=headers, allow_redirects=False)
-    if response.status_code == 200:
+
+    try:
+        # Raise an HTTPError for bad responses
+        response.raise_for_status()
         data = response.json().get('data').get('children')
+
         for text in range(10):
             print(data[text].get('data').get('title'))
-    else:
+    except requests.exceptions.HTTPError:
+        print("None")
+    except requests.exceptions.RequestException:
+        print("None")
+    except (ValueError, AttributeError):
         print("None")
