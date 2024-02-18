@@ -108,6 +108,18 @@ By following these detailed resolution steps and conducting thorough testing, I 
 By implementing these corrective and preventative measures, the goal is not only to address the immediate Nginx port 80 configuration issue but also to fortify the overall system against future challenges. A proactive approach to system maintenance, monitoring, and knowledge-sharing contributes to a more robust and reliable web infrastructure.
 </p>
 
+This is the bash script I created to ensure that this problem was fixed:
+```
+#!/usr/bin/env bash
+# This script configures Nginx to listen on port 80
+
+
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+service nginx restart
+```
+
 <p>
 As we bid farewell to the mischievous port 80 woes, remember, even Nginx has its off days. But fear not, for armed with bash scripts and debugging prowess, I managed to triumph over the chaos. Until the next digital adventure, stay curious, stay vigilant, and may your ports always be open!
 </p>
