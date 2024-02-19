@@ -5,7 +5,7 @@
 
 ## Background Context
 <p>
-Your web infrastructure is already serving web pages via `Nginx` that you installed in your <a href="https://github.com/Abucheri/alx-system_engineering-devops/tree/master/0x0C-web_server">first web stack project</a>. While a web server can also serve dynamic content, this task is usually given to an application server. In this project you will add this piece to your infrastructure, plug it to your <strong>Nginx</strong> and make is serve your Airbnb clone project.
+Your web infrastructure is already serving web pages via `Nginx` that you installed in your <a href="https://github.com/Abucheri/alx-system_engineering-devops/tree/master/0x0C-web_server">first web stack project</a>. While a web server can also serve dynamic content, this task is usually given to an application server. In this project you will add this piece to your infrastructure, plug it to your <code>Nginx</code> and make is serve your Airbnb clone project.
 </p>
 
 0. Set up development with Python
