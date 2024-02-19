@@ -26,3 +26,4 @@
 23. [0x0D. Web stack debugging #0](./0x0D-web_stack_debugging_0/ 'web stack debugging')
 24. [0x0E. Web stack debugging #1](./0x0E-web_stack_debugging_1/ 'web debbugging 1')
 25. [0x0F. Load balancer](./0x0F-load_balancer/ 'load balancer')
+26. [0x1A. Application server](./0x1A-application_server/ 'Application Server')
