@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Accept user input for variables
+read -rp "Enter the local folder path: " local_folder
+read -rp "Enter the remote user: " remote_user
+read -rp "Enter the remote server: " remote_server
+read -rp "Enter the private key file path: " private_key_file
+
+# Check if the local folder exists
+if [ ! -d "$local_folder" ]; then
+    echo "Local folder does not exist."
+    exit 1
+fi
+
+# Check if the private key file exists
+if [ ! -f "$private_key_file" ]; then
+    echo "Private key file does not exist."
+    exit 1
+fi
+
+# Use scp to copy the folder and its contents to the remote user's home folder
+if scp -i "$private_key_file" -o StrictHostKeyChecking=no -r "$local_folder" "$remote_user@$remote_server":~/; then
+    echo "Folder transfer successful."
+else
+    echo "Error transferring folder."
+fi
