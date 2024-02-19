@@ -1,5 +1,8 @@
 # 0x1A. Application server
 
+![c7d1ed0a2e10d1b4e9b3](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/8618ad2c-b9b9-45b7-8663-d24c0ef782c5)
+
+
 ## Background Context
 <p>
 Your web infrastructure is already serving web pages via `Nginx` that you installed in your [first web stack project](../0x0C-web_server 'Web Server'). While a web server can also serve dynamic content, this task is usually given to an application server. In this project you will add this piece to your infrastructure, plug it to your `Nginx` and make is serve your Airbnb clone project.
@@ -187,6 +190,9 @@ Your web infrastructure is already serving web pages via `Nginx` that you instal
 		- Make sure to pull up your Developer Tools on your favorite browser to verify that you have no errors
 		- Upload your `Nginx` config as `5-app_server-nginx_config`
 	- After loading, your website should look like this:
+
+ 	![7a8a7c33021b1b74f9cdc1fd8f855bdb1f8cd44e](https://github.com/Abucheri/alx-system_engineering-devops/assets/24778489/ad80b25b-37b2-417d-992c-e47c390409fa)
+
 
 6. Deploy it!
 	- Once you’ve got your application server configured, you want to set it up to run by default when Linux is booted. This way when your server inevitably requires downtime (you have to shut it down or restart it for one reason or another), your `Gunicorn` process(es) will start up as part of the system initialization process, freeing you from having to manually restart them. For this we will use `systemd`. You can read more about `systemd` in the documentation posted at the top of this project but to put it succinctly, it is a system initialization daemon for the Linux OS (amongst other things). For this task you will write a `systemd` script which will start your application server for you. As mentioned in the video at the top of the project, you do not need to create a Unix socket to bind the process to.
